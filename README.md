@@ -23,7 +23,7 @@ npm run start:dev
 - `POST /auth/login` – Log in and get a token
 - `GET /reports` – Get price estimate for a vehicle
 - `POST /reports` – Submit a sale report
-- `PATCH /reports` – Approve a sale report (admin only)
+- `PATCH /reports/:id` – Approve a sale report (admin only)
 
 ## License
 MIT
