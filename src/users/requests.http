@@ -3,9 +3,26 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "test2@gmail.com",
+    "email": "max@gmail.com",
     "password": "123456"
 }
+
+### Sign in as an existing user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "max@gmail.com",
+    "password": "123456"
+}
+
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
+
+### Get the currently signed in user
+GET http://localhost:3000/auth/whoami
 
 
 ### Find User by id
@@ -29,3 +46,23 @@ content-type: application/json
     "email": "theEmailUpdate2@gmail.com",
     "password": "aaaaaaaaaabbb"
 }
+
+
+
+
+
+
+
+# ### Set a color
+# GET http://localhost:3000/auth/colors/gren
+
+
+# ### Get the color
+# GET http://localhost:3000/auth/colors
+
+
+
+
+
+
+
