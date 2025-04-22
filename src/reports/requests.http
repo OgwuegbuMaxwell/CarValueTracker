@@ -1,0 +1,15 @@
+### Create a report
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+    "make": "Mercedes",
+    "model": "C300",
+    "year": 2019,
+    "mileage": 10000,
+    "lat": 0,
+    "lng": 0,
+    "price": 80000
+}
+
+
