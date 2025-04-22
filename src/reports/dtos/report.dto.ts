@@ -26,6 +26,9 @@ export class ReportDto {
     @Expose()
     mileage: number;
 
+    @Expose()
+    approved: boolean;
+
     // obj takes the original entity that we are currently trying to format,
     // look at its properties and find user id, and asign it to userId we defined below
     @Transform(({obj}) => obj.user.id)
